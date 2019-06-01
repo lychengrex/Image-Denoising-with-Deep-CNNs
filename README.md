@@ -2,6 +2,22 @@
 
 Use deep Convolutional Neural Networks (CNNs) with PyTorch, including investigating DnCNN and U-net architectures. More details in [`tutorial.ipynb`](src/tutorial.ipynb).
 
+## Model Architecture
+
+1. DnCNN
+
+![](images/dncnn.png)
+
+2. UDnCNN
+![](images/udncnn.png)
+
+3. DUDnCNN (Dilated U-shaped DnCNN)
+
+Each convolution placed after `k` pooling and `l` unpooling in the network, should be replaced by a dilated filter with 2^(k−l) − 1 holes. This can be achieved with the dilation optional argument of `nn.Conv2d`. Make sure set up the argument padding accordingly to maintain tensors with the same spatial dimension during the forward propagation.
+![](images/dilated_conv.png)
+
+
+
 ## Dataset
 
 Images from [Berkeley Segmentation Dataset and Benchmark](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/).  
