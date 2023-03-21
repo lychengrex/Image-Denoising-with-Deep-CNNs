@@ -64,3 +64,9 @@ python main.py
 ## Demonstration and tutorial
 
 Please see [`demo.ipynb`](src/demo.ipynb) for demonstration, and [`tutorial.ipynb`](src/tutorial.ipynb) for tutorial.
+
+> Note: There *might be* minor mistakes regarding the model architecture in the code.
+
+## References
+
+* https://www.charles-deledalle.fr/pages/files/ucsd_ece285_mlip/assignment4.pdf 
